@@ -1,0 +1,199 @@
+{
+  "property1": {
+    "landingPage": {
+      "headerLogo": "/images/logo.png",
+      "pageTitle": "Book Your Dream Vacation",
+      "bannerImage": "/images/banner.jpg",
+      "lengthOfStay": 7,
+      "guestOptions": {
+        "adults": {
+          "show": true,
+          "min": 1,
+          "max": 3
+        },
+        "children": {
+          "show": true,
+          "min": 0,
+          "max": 3
+        },
+        "infants": {
+          "show": true,
+          "min": 0,
+          "max": 3
+        }
+      },
+      "roomOptions": {
+        "standard": "Standard Room",
+        "deluxe": "Deluxe Room",
+        "suite": "Suite"
+      },
+      "accessibility": true
+    },
+    "roomResultsPage": {
+      "filters": [
+        {
+          "name": "Price",
+          "options": [
+            {
+              "name": "Under $100",
+              "minPrice": 0,
+              "maxPrice": 100
+            },
+            {
+              "name": "$100 - $200",
+              "minPrice": 100,
+              "maxPrice": 200
+            },
+            {
+              "name": "Over $200",
+              "minPrice": 200,
+              "maxPrice": null
+            }
+          ]
+        },
+        {
+          "name": "Room Type",
+          "options": [
+            {
+              "show": true,
+              "name": "Standard Room",
+              "type": "standard"
+            },
+            {
+              "show": true,
+              "name": "Deluxe Room",
+              "type": "deluxe"
+            },
+            {
+              "show": true,
+              "name": "Suite",
+              "type": "suite"
+            }
+          ]
+        }
+      ],
+      "sortOptions": [
+        {
+          "show": true,
+          "name": "Price (Low to High)",
+          "sortBy": "price_asc"
+        },
+        {
+          "show": true,
+          "name": "Price (High to Low)",
+          "sortBy": "price_desc"
+        },
+        {
+          "show": true,
+          "name": "Rating (High to Low)",
+          "sortBy": "rating_desc"
+        }
+      ]
+    },
+    "RoomDetailsModal": {
+      "RoomTypeImages": {
+        "executive": [
+          "./roomTypeImages/executive1.png",
+          "./roomTypeImages/executive2.png"
+        ],
+        "standard": [
+          "./roomTypeImages/standard1.png",
+          "./roomTypeImages/standard2.png"
+        ],
+        "delux": ["./roomTypeImages/delux1.png", "./roomTypeImages/delux2.png"]
+      },
+      "RoomTypeDescription": {
+        "executive": "This is a executive room for executive people",
+        "standard": "This is a standard room for standard people",
+        "delux": "This is a delux room for delux people"
+      },
+      "RoomTypeAmenities": {
+        "executive": ["amenity1", "amenity2", "amenity3", "amenity4"],
+        "standard": ["amenity1", "amenity2", "amenity3", "amenity4"],
+        "delux": ["amenity1", "amenity2", "amenity3", "amenity4"]
+      }
+    },
+    "checkoutPage": {
+      "travelerInfoFields": [
+        {
+          "name": "First Name",
+          "required": true
+        },
+        {
+          "name": "Last Name",
+          "required": true
+        },
+        {
+          "name": "Middle Name",
+          "required": false,
+          "show": false
+        },
+        {
+          "name": "Email",
+          "required": true
+        },
+        {
+          "name": "Phone",
+          "required": false,
+          "show": "true"
+        },
+        {
+          "name": "Address",
+          "required": true
+        },
+        {
+          "name": "City",
+          "required": true
+        },
+        {
+          "name": "State",
+          "required": true
+        },
+        {
+          "name": "Zip Code",
+          "required": true
+        }
+      ],
+      "billingInfoFields": [
+        {
+          "name": "Credit Card Number",
+          "required": true
+        },
+        {
+          "name": "IFSC Code",
+          "required": false,
+          "show": false
+        },
+        {
+          "name": "Expiration Date",
+          "required": true
+        },
+        {
+          "name": "CVV",
+          "required": true
+        },
+        {
+          "name": "Billing Address",
+          "required": true
+        },
+        {
+          "name": "Billing City",
+          "required": true
+        },
+        {
+          "name": "Billing State",
+          "required": true
+        },
+        {
+          "name": "Billing Zip Code",
+          "required": true
+        }
+      ],
+      "taxesAndSurcharges": {
+        "taxRate": 0.1,
+        "surchargeRate": 0.05
+      },
+      "percentDueAtResort": 0.2
+    }
+  }
+}
